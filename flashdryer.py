@@ -473,3 +473,4 @@ st.image(image)
 
 image = Image.open('IITA_logo.png')
 st.image(image)
+
