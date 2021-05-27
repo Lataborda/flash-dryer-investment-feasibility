@@ -461,6 +461,10 @@ If i) the cash flow is positive and increasing over time, ii) the profitability 
 st.markdown('*Copyright (C) 2021 CIRAD & CIAT*')
 st.markdown('**Authors: Luis Alejandro Taborda Andrade (latabordaa@unal.edu.co), Thierry Tran (thierry.tran@cirad.fr)**')
 
+st.write("""
+The program provided on this page is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3 of the License or any later version. In particular, you may convey verbatim copies or modified source versions of the Program's source code, in any medium, provided that you conspicuously and appropriately publish on each copy copyright and other notices as detailed in the General Public License. You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
+This program is distributed "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability or fitness for a particular purpose. In particular, this program is distributed “as is” without warranty regarding, but not limited to, any damages, loss of information, loss of profits, liabilities and/or injuries caused through the use of this program. See the GNU General Public License for more details.
+""")
 
 image = Image.open('logo_rtb.png')
 st.image(image)
@@ -474,7 +478,4 @@ st.image(image)
 image = Image.open('IITA_logo.png')
 st.image(image)
 
-st.write("""
-The program provided on this page is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3 of the License or any later version. In particular, you may convey verbatim copies or modified source versions of the Program's source code, in any medium, provided that you conspicuously and appropriately publish on each copy copyright and other notices as detailed in the General Public License. You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
-This program is distributed "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability or fitness for a particular purpose. In particular, this program is distributed “as is” without warranty regarding, but not limited to, any damages, loss of information, loss of profits, liabilities and/or injuries caused through the use of this program. See the GNU General Public License for more details.
-""")
+
