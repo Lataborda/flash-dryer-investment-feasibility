@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np 
 from PIL import Image
 
-image = Image.open('logo_scaling.png')
+image = Image.open('new_logo.png')
 st.image(image)
 
 st.write("""
