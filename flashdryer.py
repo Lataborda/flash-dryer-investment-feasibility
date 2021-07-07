@@ -87,7 +87,7 @@ elif User_country == 'DR. Congo (intermediate investment cost)':
 	disp_col.subheader(Price_2)
 
 
-Cassava_demand = sel_col.slider('On a weekly basis, how many kilograms of cassava roots are available for processing at your location?', min_value=16.3, max_value=11.42, value=49, step=16.3)
+Cassava_demand = sel_col.slider('approximately how many tons of cassava roots would be available for processing at your site', min_value=16.3, max_value=11.42, value=49, step=16.3)
 R= Cassava_demand
 def load_data():
 	df=pd.DataFrame(datos1)
