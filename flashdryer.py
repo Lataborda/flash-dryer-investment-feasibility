@@ -179,7 +179,7 @@ elif User_country == 'DR. Congo (intermediate investment cost)'and Complementary
 
 #Cost of cassava roots and processing cost + flour selling price 
 
-Cassava_cost = sel_col.slider('What is the cost of one(1) Ton of cassava roots in a locality (in $USD)?', min_value=10, max_value=350, value=600, step=10)
+Cassava_cost = sel_col.slider('What is the cost of one(1) Ton of cassava roots in a locality (in $USD)?', min_value=10, max_value=350, value=180, step=10)
 CCP= Cassava_cost
 
 Flour_price = sel_col.slider('What is the selling price per 1 kg of HQCF (at factory gate) (in $USD)?', min_value=100, max_value=1500, value=400, step=100)
