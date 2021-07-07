@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np 
 from PIL import Image
 
-image = Image.open('logo_scaling.png')
+image = Image.open('new_logo.png')
 st.image(image)
 
 st.write("""
@@ -465,12 +465,4 @@ st.markdown('**Authors: Luis Alejandro Taborda Andrade (latabordaa@unal.edu.co),
 image = Image.open('logo_rtb.png')
 st.image(image)
 
-image = Image.open('cirad_logo.png')
-st.image(image)
-
-image = Image.open('CIAT_logo.png')
-st.image(image)
-
-image = Image.open('IITA_logo.png')
-st.image(image)
 
