@@ -77,13 +77,13 @@ Price_2 = datos[datos['F_demand']==Flour_demand]['DRC_Price']
 Price_3 = datos[datos['F_demand']==Flour_demand]['NIG_Price']
 
 
-if User_country == 'Colombia':
+if User_country == 'Colombia (high investment cost)':
 	disp_col.subheader(Price_1)
 
-elif User_country == 'Nigeria':
+elif User_country == 'Nigeria (low investment cost)':
 	disp_col.subheader(Price_3)
 
-elif User_country == 'DR. Congo':
+elif User_country == 'DR. Congo (intermediate investment cost)':
 	disp_col.subheader(Price_2)
 
 
@@ -132,13 +132,13 @@ C_Price_2 = datos2[datos2['F_demand']==Flour_demand]['DRC_complementary']
 C_Price_3 = datos2[datos2['F_demand']==Flour_demand]['NIG_complementary']
 
 
-if User_country == 'Colombia' and Complementary_tech == 'yes':
+if User_country == 'Colombia (high investment cost)' and Complementary_tech == 'yes':
 	disp_col.subheader(C_Price_1)
 
-elif User_country == 'Nigeria'and Complementary_tech == 'yes':
+elif User_country == 'Nigeria (low investment cost)'and Complementary_tech == 'yes':
 	disp_col.subheader(C_Price_3)
 
-elif User_country == 'DR. Congo'and Complementary_tech == 'yes':
+elif User_country == 'DR. Congo (intermediate investment cost)'and Complementary_tech == 'yes':
 	disp_col.subheader(C_Price_2)
 
 
@@ -150,27 +150,27 @@ Inv_NIG = C_Price_3+Price_3
 
 disp_col.subheader('The total investment (in USD) is:')
 
-if User_country == 'Colombia' and Complementary_tech == 'yes':
+if User_country == 'Colombia (high investment cost)' and Complementary_tech == 'yes':
 	TI=Inv_col
 	disp_col.write(Inv_col)
 
-elif User_country == 'Nigeria'and Complementary_tech == 'yes':
+elif User_country == 'Nigeria (low investment cost)'and Complementary_tech == 'yes':
 	TI=Inv_NIG
 	disp_col.write(Inv_NIG)
 
-elif User_country == 'DR. Congo'and Complementary_tech == 'yes':
+elif User_country == 'DR. Congo (intermediate investment cost)'and Complementary_tech == 'yes':
 	TI=Inv_DRC
 	disp_col.write(Inv_DRC)
 
-if User_country == 'Colombia' and Complementary_tech == 'not':
+if User_country == 'Colombia (high investment cost)' and Complementary_tech == 'not':
 	TI=Price_1
 	disp_col.write(Price_1)
 
-elif User_country == 'Nigeria'and Complementary_tech == 'not':
+elif User_country == 'Nigeria (low investment cost)'and Complementary_tech == 'not':
 	TI=Price_3
 	disp_col.write(Price_3)
 
-elif User_country == 'DR. Congo'and Complementary_tech == 'not':
+elif User_country == 'DR. Congo (intermediate investment cost)'and Complementary_tech == 'not':
 	TI=Price_2
 	disp_col.write(Price_2)
 
