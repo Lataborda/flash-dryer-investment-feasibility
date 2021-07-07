@@ -91,7 +91,7 @@ Cassava_demand = sel_col.slider('approximately how many tons of cassava roots wo
 R= Cassava_demand
 def load_data():
 	df=pd.DataFrame(datos1)
-	df_reset=df.set_index('Cassava roots required (kg/week)')
+	df_reset=df.set_index('Cassava roots required (Ton/week)')
 	return df_reset
 
 datos1 = {'F_demand':[5,10,15,20,25,30,35],
