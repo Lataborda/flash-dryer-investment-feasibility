@@ -16,7 +16,7 @@ sel_col, disp_col = st.beta_columns(2)
 User_country = sel_col.selectbox('Please select your location (more approximate)', options=['DR. Congo (intermediate investment cost)','Nigeria (low investment cost)','Colombia (high investment cost)'], index=0)
 
 
-Flour_demand = sel_col.slider('If you have conducted a previous market survey, do you know what is the demand (estimated or projected) for cassava flour in your target market? (in Kg/week)', min_value=5000, max_value=35000, value=15000, step=5000)
+Flour_demand = sel_col.slider('If you have conducted a previous market survey, do you know what is the demand (estimated or projected) for cassava flour in your target market? (in Ton/week)', min_value=5, max_value=35, value=15, step=5)
 
 disp_col.write('Considering that the dryer will be operating for 6 days/week and 8 hours/day, the required capacity of the flash dryer (in Kg/hr) is:')
 
@@ -30,25 +30,25 @@ Capacity6 = 600
 Capacity7 = 700 
 
 
-if Flour_demand == 5000:
+if Flour_demand == 5:
 	CY=100
 	disp_col.subheader(Capacity1)
-elif Flour_demand == 10000:
+elif Flour_demand == 10:
 	CY=200
 	disp_col.subheader(Capacity2)
-elif Flour_demand == 15000:
+elif Flour_demand == 15:
 	CY=300
 	disp_col.subheader(Capacity3)
-elif Flour_demand == 20000:
+elif Flour_demand == 20:
 	CY=400
 	disp_col.subheader(Capacity4)
-elif Flour_demand == 25000:
+elif Flour_demand == 25:
 	CY=500
 	disp_col.subheader(Capacity5)
-elif Flour_demand == 30000:
+elif Flour_demand == 30:
 	CY=600
 	disp_col.subheader(Capacity6)
-elif Flour_demand == 35000:
+elif Flour_demand == 35:
 	CY=700
 	disp_col.subheader(Capacity7)	
 
@@ -59,7 +59,7 @@ def load_data():
 	df_reset=df.set_index('Flash Dryer Price')
 	return df_reset
 
-datos = {'F_demand':[5000,10000,15000,20000,25000,30000,35000],
+datos = {'F_demand':[5,10,15,20,25,30,35],
 	'NIG_Price':[9497,14728,19040,22431,24903,26454,27085],
 	'NIG_complementary':[4070,6312,8160,9613,10673,11337,11608],
 	'Roots_demand':[16300,32600,48900,65200,81500,97800,114100],
@@ -94,7 +94,7 @@ def load_data():
 	df_reset=df.set_index('Cassava roots required (kg/week)')
 	return df_reset
 
-datos1 = {'F_demand':[5000,10000,15000,20000,25000,30000,35000],
+datos1 = {'F_demand':[5,10,15000,20,25,30,35],
 	'Roots_demand':[16300,32600,48900,65200,81500,97800,114100],
 	'Cassava roots required (kg/week)':['Kg','Kg','Kg','Kg','Kg','Kg','Kg']}
 
@@ -118,7 +118,7 @@ def load_data():
 	df_reset=df.set_index('Complementary technology Price')
 	return df_reset
 
-datos2 = {'F_demand':[5000,10000,15000,20000,25000,30000,35000],
+datos2 = {'F_demand':[5,10,15,20,25,30,35],
 	'NIG_complementary':[4070,6312,8160,9613,10673,11337,11608],
 	'DRC_complementary':[6026,10702,14878,18554,21729,24403,26577],
 	'Colombia_complementary':[12406,17058,21428,25516,29322,32847,36089],
