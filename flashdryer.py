@@ -197,6 +197,7 @@ disp_col.markdown(round(CPC,2))
 sel_col.write('**Please specify the percentage of participation of the type of origin of the investment**')
 Owm_Resourses = sel_col.selectbox('Own resources(in %)', options=[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100], index=0)
 Bank_loan = 100-(int(Owm_Resourses))
+sel_col.write('Bank loan (in %):')
 sel_col.write(Bank_loan)
 
 if int(Owm_Resourses)!=0:
