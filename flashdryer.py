@@ -179,10 +179,10 @@ elif User_country == 'DR. Congo (intermediate investment cost)'and Complementary
 
 #Cost of cassava roots and processing cost + flour selling price 
 
-Cassava_cost = sel_col.slider('What is the cost of one(1) Kg of cassava roots in a locality (in $USD)?', min_value=0.01, max_value=0.35, value=0.06, step=0.01)
+Cassava_cost = sel_col.slider('What is the cost of one(1) Ton of cassava roots in a locality (in $USD)?', min_value=10, max_value=350, value=600, step=10)
 CCP= Cassava_cost
 
-Flour_price = sel_col.slider('What is the selling price per 1 kg of HQCF (at factory gate) (in $USD)?', min_value=0.1, max_value=3.0, value=0.4, step=0.1)
+Flour_price = sel_col.slider('What is the selling price per 1 kg of HQCF (at factory gate) (in $USD)?', min_value=100, max_value=1500, value=400, step=100)
 FP= Flour_price
 
 disp_col.write('Data collected in the countries under study allow us to conclude that the price of roots is on average 75% of flour processing costs (using ratio flour/roots= 1:3.5). Therefore, we could infer that the processing costs could be: ')
