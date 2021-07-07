@@ -62,7 +62,7 @@ def load_data():
 datos = {'F_demand':[5,10,15,20,25,30,35],
 	'NIG_Price':[9497,14728,19040,22431,24903,26454,27085],
 	'NIG_complementary':[4070,6312,8160,9613,10673,11337,11608],
-	'Roots_demand':[16300,32600,48900,65200,81500,97800,114100],
+	'Roots_demand':[16.3,32.6,48.9,65.2,81.5,97.8,114.1],
 	'DRC_complementary':[6026,10702,14878,18554,21729,24403,26577],
 	'DRC_Price':[14060,24972,34716,43292,50700,56940,62012],
 	'Colombia_complementary':[12406,17058,21428,25516,29322,32847,36089],
@@ -87,7 +87,7 @@ elif User_country == 'DR. Congo (intermediate investment cost)':
 	disp_col.subheader(Price_2)
 
 
-Cassava_demand = sel_col.slider('On a weekly basis, how many kilograms of cassava roots are available for processing at your location?', min_value=16300, max_value=114200, value=49000, step=16300)
+Cassava_demand = sel_col.slider('On a weekly basis, how many kilograms of cassava roots are available for processing at your location?', min_value=16.3, max_value=11.42, value=49, step=16.3)
 R= Cassava_demand
 def load_data():
 	df=pd.DataFrame(datos1)
@@ -95,7 +95,7 @@ def load_data():
 	return df_reset
 
 datos1 = {'F_demand':[5,10,15,20,25,30,35],
-	'Roots_demand':[16300,32600,48900,65200,81500,97800,114100],
+	'Roots_demand':[16.3,32.6,48.9,65.2,81.5,97.8,114.1],
 	'Cassava roots required (kg/week)':['Kg','Kg','Kg','Kg','Kg','Kg','Kg']}
 
 datos1 = load_data()
