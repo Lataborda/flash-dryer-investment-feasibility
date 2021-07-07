@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np 
 from PIL import Image
 
-image = Image.open('new_logo.png')
+image = Image.open('logo_scaling.png')
 st.image(image)
 
 st.write("""
@@ -13,7 +13,7 @@ This tool uses predetermined information based on averages of business plans of 
 """)
 
 sel_col, disp_col = st.beta_columns(2)
-User_country = sel_col.selectbox('Please select your location (more approximate)', options=['DR. Congo (intermediate investment cost)','Nigeria (low investment cost)','Colombia (high investment cost)'], index=0)
+User_country = sel_col.selectbox('Please select your location (more approximate)', options=['DR. Congo','Nigeria','Colombia'], index=0)
 
 
 Flour_demand = sel_col.slider('If you have conducted a previous market survey, do you know what is the demand (estimated or projected) for cassava flour in your target market? (in Kg/week)', min_value=5000, max_value=35000, value=15000, step=5000)
@@ -461,10 +461,16 @@ If i) the cash flow is positive and increasing over time, ii) the profitability 
 st.markdown('*Copyright (C) 2021 CIRAD & CIAT*')
 st.markdown('**Authors: Luis Alejandro Taborda Andrade (latabordaa@unal.edu.co), Thierry Tran (thierry.tran@cirad.fr)**')
 
-st.write("""
-The program provided on this page is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3 of the License or any later version. In particular, you may convey verbatim copies or modified source versions of the Program's source code, in any medium, provided that you conspicuously and appropriately publish on each copy copyright and other notices as detailed in the General Public License. You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
-This program is distributed "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability or fitness for a particular purpose. In particular, this program is distributed “as is” without warranty regarding, but not limited to, any damages, loss of information, loss of profits, liabilities and/or injuries caused through the use of this program. See the GNU General Public License for more details.
-""")
 
 image = Image.open('logo_rtb.png')
 st.image(image)
+
+image = Image.open('cirad_logo.png')
+st.image(image)
+
+image = Image.open('CIAT_logo.png')
+st.image(image)
+
+image = Image.open('IITA_logo.png')
+st.image(image)
+
