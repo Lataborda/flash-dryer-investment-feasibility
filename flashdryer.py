@@ -94,7 +94,7 @@ def load_data():
 	df_reset=df.set_index('Cassava roots required (kg/week)')
 	return df_reset
 
-datos1 = {'F_demand':[5,10,15000,20,25,30,35],
+datos1 = {'F_demand':[5,10,15,20,25,30,35],
 	'Roots_demand':[16300,32600,48900,65200,81500,97800,114100],
 	'Cassava roots required (kg/week)':['Kg','Kg','Kg','Kg','Kg','Kg','Kg']}
 
