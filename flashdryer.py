@@ -13,7 +13,7 @@ This tool uses predetermined information based on averages of business plans of 
 """)
 
 sel_col, disp_col = st.beta_columns(2)
-User_country = sel_col.selectbox('Please select your location (more approximate)', options=['DR. Congo','Nigeria','Colombia'], index=0)
+User_country = sel_col.selectbox('Please select your location (more approximate)', options=['DR. Congo (intermediate investment cost)','Nigeria (low investment cost)','Colombia (high investment cost)'], index=0)
 
 
 Flour_demand = sel_col.slider('If you have conducted a previous market survey, do you know what is the demand (estimated or projected) for cassava flour in your target market? (in Kg/week)', min_value=5000, max_value=35000, value=15000, step=5000)
