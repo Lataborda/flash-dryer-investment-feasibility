@@ -96,7 +96,7 @@ def load_data():
 
 datos1 = {'F_demand':[5,10,15,20,25,30,35],
 	'Roots_demand':[16.3,32.6,48.9,65.2,81.5,97.8,114.1],
-	'Cassava roots required (kg/week)':['Kg','Kg','Kg','Kg','Kg','Kg','Kg']}
+	'Cassava roots required (Ton/week)':['Ton','Ton','Ton','Ton','Ton','Ton','Ton']}
 
 datos1 = load_data()
 
