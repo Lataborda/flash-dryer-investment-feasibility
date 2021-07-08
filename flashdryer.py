@@ -238,16 +238,16 @@ if int(Bank_loan)==0:
 	loan=0
 
 #cashflow
-#factor = 8(hour)*6(days/week)*4(weeks)*12(monts)=2304
+#factor = 8(hour)*6(days/week)*4(weeks)*12(monts)=2304/1000 to Tons = 2.304
 #55% of capacity 1est year and 67% the more than 2cond year
 
 #Sales of HQCF US$
-Sa=(CY*FP*2304*0.55)
-Sb=(CY*FP*2304*0.67)
+Sa=(CY*FP*2.304*0.55)
+Sb=(CY*FP*2.304*0.67)
 
 #Production costs
-pca=(CY*CPC*2304*0.55)
-pcb=(CY*CPC*2304*0.67)
+pca=(CY*CPC*2.304*0.55)
+pcb=(CY*CPC*2.304*0.67)
 amr=int(TI)/10
 
 #EBIT (cost of depreciation)
