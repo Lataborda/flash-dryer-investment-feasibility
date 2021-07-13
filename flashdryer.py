@@ -423,7 +423,7 @@ datos3 = {'Year_1':[Sa,pca,(Sa-pca),amr,EBITa,int_1,opp,taxa,Net_P1,amr,Net_P1,c
 	'Year_8':[Sb,pcb,(Sb-pcb),amr,EBITb,int_8,opp,taxb,Net_P8,amr,Net_P8,cap_8,N_bal8,Acc_b8],
 	'Year_9':[Sb,pcb,(Sb-pcb),amr,EBITb,int_9,opp,taxb,Net_P9,amr,Net_P9,cap_9,N_bal9,Acc_b9],
 	'Year_10':[Sb,pcb,(Sb-pcb),amr,EBITb,int_10,opp,taxb,Net_P10,amr,Net_P10,cap_10,N_bal10,Acc_b10],
-	'Cash_Flow':['Sales of HQCF US$','Production costs US$','Operating results (EBITDA*) US$','Costs of depreciation & maintenance US$','Earnings Before Interest & Taxes (EBIT**) US$','Interest on bank loans US$','Interest of opportunity cost on investment capital US$','Taxes US$','Net profit (earnings) US$','Depreciation US$','Results for each period US$','Loans amortized (repayment of capital to bank) US$','Net balance US$','Accumulated balance US$']}
+	'Cash_Flow':['Sales of HQCF US$','Production costs US$','EBITDA* (Operating results) US$','Costs of depreciation & maintenance US$','EBIT** US$','Interest on bank loans US$','Interest of opportunity cost on investment capital US$','Taxes US$','Net profit (earnings) US$','Depreciation US$','Results for each period US$','Loans amortized (repayment of capital to bank) US$','Net balance US$','Accumulated balance US$']}
 
 datos3 = load_data()
 
