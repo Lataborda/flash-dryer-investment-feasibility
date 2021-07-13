@@ -187,7 +187,7 @@ FP= Flour_price
 
 disp_col.write('Data collected in the countries under study allow us to conclude that the price of roots is on average 75% of flour processing costs (using ratio flour/roots= 1:3.5). Therefore, we could infer that the processing costs could be: ')
 
-disp_col.write('**Cassava flour processing costs per Kg ($USD)**')
+disp_col.write('**Cassava flour processing costs per Ton ($USD)**')
 
 CPC =((CCP*3.5)/0.75)
 disp_col.markdown(round(CPC,2))
