@@ -433,13 +433,6 @@ st.write('**EBIT= Earnings Before Interest & Taxes')
 
 st.subheader('Evaluation of economic indicators')
 
-cashflows= [-int(TI),int(Net_P1),int(Net_P2),int(Net_P3),int(Net_P4),int(Net_P5),int(Net_P6),int(Net_P7),int(Net_P8),int(Net_P9),int(Net_P10)]
-rate=opportunity_rate/100
-npv =np.npv(rate,cashflows)
-irr =np.irr(cashflows)
-st.write(f"Internal rate of return (IRR): {round(irr*100,2)}%")
-st.write(f"Net present value (NPV): ${round(npv,2)}")
-st.write(f"Financial viability: ${round((int(npv)-int(TI)),2)}")
 
 
 st.write("""
