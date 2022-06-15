@@ -436,7 +436,6 @@ st.subheader('Evaluation of economic indicators')
 cashflows= [-int(TI),int(Net_P1),int(Net_P2),int(Net_P3),int(Net_P4),int(Net_P5),int(Net_P6),int(Net_P7),int(Net_P8),int(Net_P9),int(Net_P10)]
 rate=opportunity_rate/100
 
-irr =np.irr(cashflows)
 
 
 
