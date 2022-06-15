@@ -459,7 +459,5 @@ st.markdown('*Copyright (C) 2021 CIRAD & CIAT*')
 st.markdown('**Authors: Luis Alejandro Taborda Andrade (latabordaa@unal.edu.co), Thierry Tran (thierry.tran@cirad.fr)**')
 
 
-image = Image.open('logo_rtb.png')
-st.image(image)
 
 
