@@ -441,7 +441,7 @@ initialInvestment = -100;
 cashFlows  = [initialInvestment, 20, 30, 40, 50];
 
 
-irr = round(np.irr(cashFlows),2);
+st.write("Internal rate of return:%3.4f"%irr);
 
 
 st.write("""
