@@ -442,7 +442,7 @@ cashFlows  = [initialInvestment, 20, 30, 40, 50];
 
 
 irr = round(np.irr(cashFlows),2);
-st.write(irr)
+
 
 st.write("""
 # Tips To evaluate the feasibility of the project. 
